@@ -15,7 +15,7 @@
 
 
  :root {
-  --primary: #ffdd54;
+  --primary: #E4B80A;
   --primary-dark: #c49d08;
 }
 
@@ -10938,12 +10938,15 @@ hr.divider-light {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  /*background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../assets/electric/landingPage.jpg");*/
+  background: url("../assets/electric/newmasthead.png");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
 }
+
+
+
 header.masthead h1, header.masthead .h1 {
   font-size: 2.25rem;
 }
@@ -11028,7 +11031,7 @@ header.masthead h1, header.masthead .h1 {
 }
 
 .btn-orange {
-  background-color: var(--primary);
+  background-color: #E4B80A;
   color: white;
   border: none;
   border-radius: 20px;
@@ -11130,13 +11133,14 @@ footer {
 .masthead-wrapper {
   background: linear-gradient(
     to bottom,
-    #111827 0%,       /* dark slate masthead */
-    #4b5563 30%,      /* medium gray */
-    #9ca3af 60%,      /* light gray highlight */
-    #f3f4f6 100%      /* near-white about */
+    #083160 0%,       /* new deep blue top */
+    #2c436a 30%,      
+    #7b8da5 60%,      
+    #e4e9f0 100%      /* custom light bottom */
   );
   color: white;
 }
+
 
 /* Ensure child sections are transparent */
 .masthead,
@@ -11169,7 +11173,8 @@ footer {
 
 .masthead {
   position: relative;
-  background-image: url("../assets/electric/newlanding.png");
+  background-image: url("../assets/electric/masthead.png");
+  background-color: #083160; 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -11254,5 +11259,51 @@ color: black
   height: 40px;
   margin-right: 0.5rem;
   object-fit: contain;
+}
+
+
+/* header above meathed */
+header.masthead h1.masthead-title-top {
+  font-size: 1.5rem !important;
+  color: #E4B80A !important;
+  font-weight: bold !important;
+  margin-top: 3rem !important;
+  font-family: inherit !important;
+}
+
+.masthead-title-wrapper {
+  padding-top: 15rem; /* Adjust this value to move it lower */
+}
+
+.masthead-shift {
+  transform: translateY(-10rem); /* Try -3rem, -4rem, etc. for more shift */
+}
+
+.highlight-img {
+  width: 100%;
+  max-width: 400px;   /* Increase this value to make images bigger */
+  height: auto;
+  display: inline-block;
+}
+
+
+
+
+#about {
+  background-color: #F5FAFF;
+}
+
+#about {
+  color: #083160; /* Or whatever color you prefer */
+}
+
+#about .text-muted,
+#about .text-warning,
+#about small {
+  color: #083160 !important;
+}
+
+#about {
+  padding-top: 2rem; /* Adjust smaller as needed */
 }
 

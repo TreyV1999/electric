@@ -10938,8 +10938,7 @@ hr.divider-light {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background: url("../assets/electric/masthead.png");
-  background-color: #083160;
+  background: linear-gradient(to bottom, rgba(8, 49, 96, 0.9), rgba(8, 49, 96, 0.9)), url("../assets/electric/masthead.png");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -11170,8 +11169,9 @@ footer {
 
 .masthead {
   position: relative;
-  background-image: url("../assets/electric/newlanding.png");
+  background-image: url("../assets/electric/masthead.png");
   background-size: cover;
+  background-color: #083160;
   background-position: center;
   background-repeat: no-repeat;
   z-index: 1;
