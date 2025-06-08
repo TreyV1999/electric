@@ -15,7 +15,7 @@
 
 
  :root {
-  --primary: #ffdd54;
+  --primary: #E4B80A;
   --primary-dark: #c49d08;
 }
 
@@ -124,8 +124,6 @@ hr {
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-top: 0;
   margin-bottom: 0.5rem;
-  font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 500;
   line-height: 1.2;
 }
 
@@ -10875,8 +10873,8 @@ hr.divider-light {
 
 #mainNav {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  background-color: transparent !important;
-    transition: background-color 0.2s ease;
+  background-color: #fff;
+  transition: background-color 0.2s ease;
 }
 #mainNav .navbar-brand {
   font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -10905,8 +10903,7 @@ hr.divider-light {
     color: rgba(255, 255, 255, 0.7);
   }
   #mainNav .navbar-brand:hover {
-    background-color: transparent !important;
-    transition: background-color 0.2s ease;
+    color: #fff;
   }
   #mainNav .navbar-nav .nav-item .nav-link {
     color: rgba(255, 255, 255, 0.7);
@@ -10920,6 +10917,7 @@ hr.divider-light {
   }
   #mainNav.navbar-shrink {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    background-color: #fff;
   }
   #mainNav.navbar-shrink .navbar-brand {
     color: #212529;
@@ -10938,12 +10936,15 @@ hr.divider-light {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background: linear-gradient(to bottom, rgba(8, 49, 96, 0.9), rgba(8, 49, 96, 0.9)), url("../assets/electric/masthead.png");
+  background: url("../assets/electric/newmasthead.png");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
 }
+
+
+
 header.masthead h1, header.masthead .h1 {
   font-size: 2.25rem;
 }
@@ -11028,7 +11029,7 @@ header.masthead h1, header.masthead .h1 {
 }
 
 .btn-orange {
-  background-color: var(--primary);
+  background-color: #E4B80A;
   color: white;
   border: none;
   border-radius: 20px;
@@ -11130,13 +11131,14 @@ footer {
 .masthead-wrapper {
   background: linear-gradient(
     to bottom,
-    #111827 0%,       /* dark slate masthead */
-    #4b5563 30%,      /* medium gray */
-    #9ca3af 60%,      /* light gray highlight */
-    #f3f4f6 100%      /* near-white about */
+    #083160 0%,       /* new deep blue top */
+    #2c436a 30%,      
+    #7b8da5 60%,      
+    #e4e9f0 100%      /* custom light bottom */
   );
   color: white;
 }
+
 
 /* Ensure child sections are transparent */
 .masthead,
@@ -11170,8 +11172,8 @@ footer {
 .masthead {
   position: relative;
   background-image: url("../assets/electric/masthead.png");
+  background-color: #083160; 
   background-size: cover;
-  background-color: #083160;
   background-position: center;
   background-repeat: no-repeat;
   z-index: 1;
@@ -11257,112 +11259,72 @@ color: black
   object-fit: contain;
 }
 
- /* Highlight bar styling fix */
-.highlight-bar {
-  background-color: #f8f9fa; /* Or whatever your current color is */
-  text-align: center;
+
+/* header above meathed */
+header.masthead h1.masthead-title-top {
+  font-size: 1.5rem !important;
+  color: #E4B80A !important;
+  font-weight: bold !important;
+  margin-top: 3rem !important;
+  font-family: inherit !important;
 }
 
-.highlight-item {
-  padding: 0.5rem 1rem;
-  font-size: 1rem;
-  word-wrap: break-word;
+.masthead-title-wrapper {
+  padding-top: 15rem; /* Adjust this value to move it lower */
 }
 
-/* Remove border stacking issue on mobile */
-@media (max-width: 767px) {
-  .highlight-item {
-    border: none !important;
-    border-bottom: 1px solid #ddd;
-  }
-
-  .highlight-item:last-child {
-    border-bottom: none;
-  }
+.masthead-shift {
+  transform: translateY(-10rem); /* Try -3rem, -4rem, etc. for more shift */
 }
 
-
-
-/* Wrap to allow positioning between sections */
-.highlight-bar-wrapper {
-  position: relative;
-  z-index: 10;
-  margin-top: -70px; /* This value can be adjusted to control the float position */
-}
-
-/* Highlight bar appearance */
-.highlight-bar {
-  background-color: transparent !important;
-    transition: background-color 0.2s ease;
-  border-radius: 2rem;
-  padding: 1.5rem 2rem;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-  max-width: 960px;
-  margin: 0 auto;
-}
-
-/* Dot styling */
-.highlight-dot {
-  width: 18px;
-  height: 18px;
-  background-color: #e4b80a;
-  border-radius: 50%;
-  margin: 0 auto 0.5rem;
+.highlight-img {
+  width: 100%;
+  max-width: 400px;   /* Increase this value to make images bigger */
+  height: auto;
+  display: inline-block;
 }
 
 
-/* Floating highlight wrapper */
-.highlight-bar-wrapper {
-  position: relative;
-  margin-top: -70px;
-  z-index: 10;
+
+
+#about {
+  background-color: #F5FAFF;
 }
 
-/* Highlight bar container */
-.highlight-bar {
-  background-color: transparent !important;
-    transition: background-color 0.2s ease;
-  border-radius: 1.5rem;
-  padding: 2rem;
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
-  max-width: 1100px;
-  margin: 0 auto;
+#about {
+  color: #083160; /* Or whatever color you prefer */
 }
 
-/* Each column item */
-.highlight-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1rem;
+#about .text-muted,
+#about .text-warning,
+#about small {
+  color: #083160 !important;
 }
 
-/* Yellow dots */
-.highlight-dot {
-  width: 24px;
-  height: 24px;
-  background-color: #e4b80a;
-  border-radius: 50%;
-  margin-bottom: 0.75rem;
+#about {
+  padding-top: 2rem; /* Adjust smaller as needed */
 }
 
-/* Text appearance */
-.highlight-item h6 {
-  font-weight: 700;
-  color: #000;
-  margin-bottom: 0.25rem;
+.montserrat {
+  font-family: "montserrat", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-.highlight-item p {
-  font-size: 0.875rem;
-  color: #6c757d;
-  margin: 0;
+.roboto {
+  font-family: "roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-/* Force navbar to stay transparent at all times */
-.navbar,
-.navbar.navbar-scrolled,
-#mainNav.navbar-scrolled {
-  background-color: transparent !important;
-  box-shadow: none !important;
+.montserrat-medium {
+  font-family: "montserrat", sans-serif;
+font-weight: 500;
+font-style: normal;
+}
+
+.montserrat-bold {
+  font-family: "montserrat", sans-serif;
+font-weight: 700;
+font-style: normal;
 }
