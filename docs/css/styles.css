@@ -11355,3 +11355,9 @@ font-style: normal;
 #services.page-section {
   padding-top: 6rem; /* or 0 to remove it entirely */
 }
+
+
+#services .container {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
