@@ -10863,17 +10863,17 @@ hr.divider {
   height: 0.2rem;
   max-width: 3.25rem;
   margin: 1.5rem auto;
-  background-color: #ffdd54;
+  background-color: #F5FAFF;
   opacity: 1;
 }
 
 hr.divider-light {
-  background-color: #fff;
+  background-color: #F5FAFF;
 }
 
 #mainNav {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  background-color: #fff;
+  background-color: #F5FAFF;
   transition: background-color 0.2s ease;
 }
 #mainNav .navbar-brand {
@@ -11327,4 +11327,31 @@ font-style: normal;
   font-family: "montserrat", sans-serif;
 font-weight: 700;
 font-style: normal;
+}
+
+.service-card {
+  background-color: #E5F1FF;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  height: 100%;
+  text-align: center;
+}
+
+#services h2 {
+  margin-top: 0;         /* Already mt-0, but confirm no override */
+  padding-top: 0;
+}
+
+#services {
+  background-color: #F5FAFF;
+}
+
+.service-heading {
+  margin-top: 2rem;
+  margin-bottom: 6rem;
+}
+
+#services.page-section {
+  padding-top: 6rem; /* or 0 to remove it entirely */
 }
