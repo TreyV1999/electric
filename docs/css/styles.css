@@ -10861,14 +10861,17 @@ body {
 
 hr.divider {
   height: 0.2rem;
-  max-width: 3.25rem;
+  max-width: 6.5rem;
   margin: 1.5rem auto;
-  background-color: #F5FAFF;
+  background-color: #E4B80A;  /* your intended yellow */
+  border: none;
   opacity: 1;
 }
 
+
+
 hr.divider-light {
-  background-color: #F5FAFF;
+  background-color: #E4B80A;
 }
 
 #mainNav {
@@ -10987,7 +10990,7 @@ header.masthead h1, header.masthead .h1 {
   text-align: center;
   opacity: 0;
   color: #fff;
-  background: rgba(244, 98, 58, 0.9);
+  background: rgba(8, 49, 96, 0.9);
   transition: opacity 0.25s ease;
   text-align: center;
 }
@@ -11322,6 +11325,11 @@ header.masthead h1.masthead-title-top {
 font-weight: 500;
 font-style: normal;
 }
+.montserrat-semibold {
+font-family: "montserrat", sans-serif;
+font-weight: 600;
+font-style: normal;
+}
 
 .montserrat-bold {
   font-family: "montserrat", sans-serif;
@@ -11361,3 +11369,38 @@ font-style: normal;
   padding-left: 1rem;
   padding-right: 1rem;
 }
+
+.cta-section {
+  background: linear-gradient(rgba(8, 49, 96, 0.6), rgba(8, 49, 96, 0.6)),
+              url("../assets/electric/calltoaction.png") center/cover no-repeat;
+  padding: 3rem 1rem;
+  border-radius: 0.5rem;
+  color: white;
+}
+
+
+.cta-section h2 {
+  font-size: 2rem;
+}
+
+.cta-section a.btn-warning {
+  background-color: #E4B80A;
+  border: none;
+}
+
+
+.cta-heading {
+  font-size: 5rem; /* or larger, like 2.5rem */
+}
+
+.cta-subheading {
+  font-size: 1.25rem; /* adjust based on how prominent you want it */
+}
+
+#portfolio .portfolio-box .portfolio-box-caption {
+  background: rgba(8, 49, 96, 0.9); /* dark blue overlay */
+}
+
+
+
+
