@@ -8063,6 +8063,7 @@ textarea.form-control-lg {
 
 .text-warning {
   --bs-text-opacity: 1;
+  font-size: 2rem; /* Adjust this value as needed */
   color: rgba(var(--bs-warning-rgb), var(--bs-text-opacity)) !important;
 }
 
@@ -11013,7 +11014,6 @@ header.masthead h1, header.masthead .h1 {
 
 .contact-photo-frame {
   padding: 8px;
-  border: 3px solid var(--primary);
   display: inline-block;
   border-radius: 8px;
 }
@@ -11234,7 +11234,6 @@ color: black
 /* Contact Section Styles */
 .contact-photo {
   width: 180px;
-  border: 4px solid #e4b80a;
   border-radius: 1rem;
 }
 
@@ -11386,7 +11385,7 @@ font-style: normal;
 
 .cta-section {
   background: linear-gradient(rgba(8, 49, 96, 0.6), rgba(8, 49, 96, 0.6)),
-              url("../assets/electric/calltoaction.png") center/cover no-repeat;
+              url("../assets/other/call.jpg") center/cover no-repeat;
   padding: 3rem 1rem;
   border-radius: 0.5rem;
   color: white;
@@ -11430,4 +11429,7 @@ font-style: normal;
   transition: background-color 0.3s ease;
 }
 
+.about-color {
+  color: #000000;
+}
 
