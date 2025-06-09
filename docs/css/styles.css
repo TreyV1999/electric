@@ -2006,7 +2006,7 @@ progress {
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
-  background-color: #fff;
+  background-color: #F5FAFF;
   background-clip: padding-box;
   border: 1px solid #ced4da;
   -webkit-appearance: none;
@@ -2028,7 +2028,7 @@ progress {
 }
 .form-control:focus {
   color: #212529;
-  background-color: #fff;
+  background-color: #F5FAFF;
   border-color: #fab19d;
   outline: 0;
   box-shadow: 0 0 0 0.25rem rgba(244, 98, 58, 0.25);
@@ -2158,7 +2158,7 @@ textarea.form-control-lg {
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
-  background-color: #fff;
+  background-color: #F5FAFF;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
   background-repeat: no-repeat;
   background-position: right 0.75rem center;
@@ -2235,7 +2235,7 @@ textarea.form-control-lg {
   height: 1em;
   margin-top: 0.25em;
   vertical-align: top;
-  background-color: #fff;
+  background-color: #F5FAFF;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -2346,10 +2346,10 @@ textarea.form-control-lg {
   outline: 0;
 }
 .form-range:focus::-webkit-slider-thumb {
-  box-shadow: 0 0 0 1px #fff, 0 0 0 0.25rem rgba(244, 98, 58, 0.25);
+  box-shadow: 0 0 0 1px #F5FAFF, 0 0 0 0.25rem rgba(244, 98, 58, 0.25);
 }
 .form-range:focus::-moz-range-thumb {
-  box-shadow: 0 0 0 1px #fff, 0 0 0 0.25rem rgba(244, 98, 58, 0.25);
+  box-shadow: 0 0 0 1px #F5FAFF, 0 0 0 0.25rem rgba(244, 98, 58, 0.25);
 }
 .form-range::-moz-focus-outer {
   border: 0;
@@ -2358,7 +2358,7 @@ textarea.form-control-lg {
   width: 1rem;
   height: 1rem;
   margin-top: -0.25rem;
-  background-color: var(--primary);;
+  background-color: #F5FAFF;
   border: 0;
   border-radius: 1rem;
   -webkit-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -2852,18 +2852,18 @@ textarea.form-control-lg {
 }
 
 .btn-primary {
-  --bs-btn-color: #fff;
+  --bs-btn-color: #F5FAFF;
   --bs-btn-bg: var(--primary);;
   --bs-btn-border-color: var(--primary);;
-  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-color: #F5FAFF;
   --bs-btn-hover-bg: #cf5331;
   --bs-btn-hover-border-color: #c34e2e;
   --bs-btn-focus-shadow-rgb: 246, 122, 88;
-  --bs-btn-active-color: #fff;
+  --bs-btn-active-color: #F5FAFF;
   --bs-btn-active-bg: #c34e2e;
   --bs-btn-active-border-color: #b74a2c;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-color: #F5FAFF;
   --bs-btn-disabled-bg: var(--primary);;
   --bs-btn-disabled-border-color: var(--primary);;
 }
@@ -2889,7 +2889,7 @@ textarea.form-control-lg {
   --bs-btn-color: #fff;
   --bs-btn-bg: #198754;
   --bs-btn-border-color: #198754;
-  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-color: #F5FAFF;
   --bs-btn-hover-bg: #157347;
   --bs-btn-hover-border-color: #146c43;
   --bs-btn-focus-shadow-rgb: 60, 153, 110;
@@ -3503,10 +3503,10 @@ textarea.form-control-lg {
   --bs-dropdown-border-color: var(--bs-border-color-translucent);
   --bs-dropdown-box-shadow: ;
   --bs-dropdown-link-color: #dee2e6;
-  --bs-dropdown-link-hover-color: #fff;
+  --bs-dropdown-link-hover-color: #F5FAFF;
   --bs-dropdown-divider-bg: var(--bs-border-color-translucent);
   --bs-dropdown-link-hover-bg: rgba(255, 255, 255, 0.15);
-  --bs-dropdown-link-active-color: #fff;
+  --bs-dropdown-link-active-color: #F5FAFF;
   --bs-dropdown-link-active-bg: var(--primary);;
   --bs-dropdown-link-disabled-color: #adb5bd;
   --bs-dropdown-header-color: #adb5bd;
@@ -10939,7 +10939,7 @@ hr.divider-light {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background: url("../assets/electric/newmasthead.png");
+  background: url("../assets/other/header.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -10998,7 +10998,7 @@ header.masthead h1, header.masthead .h1 {
   font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 0.85rem;
   font-weight: 600;
-  text-transform: uppercase;
+  
 }
 #portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-sm .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-md .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-lg .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-xl .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-xxl .portfolio-box .portfolio-box-caption .project-name {
   font-size: 1.2rem;
@@ -11174,7 +11174,7 @@ footer {
 
 .masthead {
   position: relative;
-  background-image: url("../assets/electric/masthead.png");
+  background-image: url("../assets/other/header.jpg");
   background-color: #083160; 
   background-size: cover;
   background-position: center;
@@ -11320,6 +11320,14 @@ header.masthead h1.masthead-title-top {
   font-style: normal;
 }
 
+
+.roboto-bold{
+font-family: "roboto", sans-serif;
+font-weight: 700;
+font-style: normal;
+}
+
+
 .montserrat-medium {
   font-family: "montserrat", sans-serif;
 font-weight: 500;
@@ -11335,6 +11343,12 @@ font-style: normal;
   font-family: "montserrat", sans-serif;
 font-weight: 700;
 font-style: normal;
+}
+
+.montserrat-light {
+  font-family: "montserrat", sans-serif;
+  font-weight: 300;
+  font-style: normal;
 }
 
 .service-card {
@@ -11401,6 +11415,19 @@ font-style: normal;
   background: rgba(8, 49, 96, 0.9); /* dark blue overlay */
 }
 
+#contact {
+  background-color: #E5F1FF;
+}
 
+.contact-box {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+#mainNav.navbar-scrolled {
+  background-color: #F5FAFF !important; /* or any color you want */
+  transition: background-color 0.3s ease;
+}
 
 
