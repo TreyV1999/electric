@@ -11013,9 +11013,10 @@ header.masthead h1, header.masthead .h1 {
 /* --------------------- */
 
 .contact-photo-frame {
-  padding: 8px;
+  padding: 10px;
+  border: 8px solid #0D396B; /* Dark blue border */
   display: inline-block;
-  border-radius: 8px;
+  border-radius: 50px;
 }
 
 .border-bottom-only {
@@ -11432,5 +11433,10 @@ font-style: normal;
 .about-color {
   color: #000000;
 }
+
+.about-color li {
+  padding-bottom: 2px;
+}
+
 
 /* bluhh*/
