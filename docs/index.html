@@ -331,9 +331,24 @@
         </div>
       </div>
 
-      <!-- Right: Contact Form -->
-      <div class="col-lg-6">
-        <form action="https://formsubmit.co/treyvelez19@gmail.com" method="POST">
+
+
+
+
+
+
+
+
+
+     <!-- Right: Updated Contact Form -->
+    <div class="col-lg-6">
+    <form id="contactForm" class="row g-3" action="https://formsubmit.co/treyvelez19@gmail.com" method="POST">
+
+           <!-- Formsubmit.co Parameters -->
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_next" value="#">
+
 
           <!-- Name -->
           <div class="form-group mb-4">
@@ -382,23 +397,23 @@
             <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
           </div>
 
-          <!-- Success Message -->
-          <div class="d-none" id="submitSuccessMessage">
-            <div class="text-center mb-3">
-              <div class="fw-bolder">Form submission successful!</div>
-              We will contact you shortly.
+          <!-- Sucess Messages -->
+            <div class="d-none" id="submitSuccessMessage">
+              <div class="text-center mb-3">
+                <div class="fw-bolder">Form submission successful!</div>
+                We will contact you shortly.
+              </div>
             </div>
-          </div>
 
-          <!-- Error Message -->
-          <div class="d-none" id="submitErrorMessage">
-            <div class="text-center text-danger mb-3">Error sending message!</div>
-          </div>
+    <!-- Error Message -->
+    <div class="d-none" id="submitErrorMessage">
+      <div class="text-center text-danger mb-3">Error sending message!</div>
+    </div>
 
-          <!-- Submit Button -->
-          <button class="btn btn-orange px-4 py-2 disabled" id="submitButton" type="submit">Submit</button>
-        </form>
-      </div>
+    <!-- Submit Button -->
+    <button class="btn btn-orange px-4 py-2" id="submitButton" type="submit">Submit</button>
+  </form>
+</div>
 
     </div>
   </div>
@@ -431,6 +446,52 @@
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+
+        <!-- Custom JS for form validation and success/error messages -->
+        <script>
+          document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const submitButton = document.getElementById('submitButton');
+            const successMessage = document.getElementById('submitSuccessMessage');
+            const errorMessage = document.getElementById('submitErrorMessage');
+            
+            // Show loading state
+            submitButton.disabled = true;
+            submitButton.textContent = 'Sending...';
+            
+            // Get form data
+            const formData = new FormData(this);
+            
+            // Send to Formsubmit.co
+            fetch(this.action, {
+              method: 'POST',
+              body: formData,
+              headers: {
+                'Accept': 'application/json'
+              }
+            })
+            .then(response => {
+              if (response.ok) {
+                // Show success message
+                successMessage.classList.remove('d-none');
+                errorMessage.classList.add('d-none');
+                this.reset(); // Clear form
+              } else {
+                throw new Error('Form submission failed');
+              }
+            })
+            .catch(error => {
+              // Show error message
+              errorMessage.classList.remove('d-none');
+              successMessage.classList.add('d-none');
+            })
+            .finally(() => {
+              submitButton.disabled = false;
+              submitButton.textContent = 'Submit';
+            });
+          });
+        </script>
     </body>
 </html>
 
