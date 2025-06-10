@@ -320,14 +320,24 @@
     <!-- Two Columns: Image Left, Form Right -->
     <div class="row align-items-center">
 
+
       <!-- Left: Photo + Contact Info -->
-      <div class="col-lg-6 text-center text-lg-start mb-4 mb-lg-0 d-flex flex-column justify-content-start align-items-center align-items-lg-start">
-        <div class="contact-photo-frame">
+      <div class="col-lg-6 text-center mb-4 mb-lg-0">
+        <!-- Photo Frame (centered) -->
+        <div class="contact-photo-frame mx-auto">
           <img src="assets/other/newcontact.jpg" alt="Plumber Contact" class="contact-photo img-fluid rounded">
         </div>
-        <div class="contact-info text-center">
-          <p><img src="assets/other/phone.png" alt="Phone" class="contact-icon roboto-light me-2"> (305) 367-1378</p>
-          <p><img src="assets/other/mail.png" alt="Email" class="contact-icon roboto-light me-2"> LinoFa43sc@gmail.com</p>
+
+        <!-- Contact Info (centered, with fixed icons) -->
+        <div class="contact-info mt-3">
+          <p class="d-flex gap-2 mb-2">
+            <img src="assets/other/phone.png" alt="Phone" class="contact-icon"> 
+            <span>(305) 367-1378</span>
+          </p>
+          <p class="d-flex justify-content-center  gap-2 mb-0">
+            <img src="assets/other/mail.png" alt="Email" class="contact-icon"> 
+            <span>LinoFa43sc@gmail.com</span>
+          </p>
         </div>
       </div>
 

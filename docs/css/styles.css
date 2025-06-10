@@ -11244,7 +11244,7 @@ color: black
   text-align: left;
   margin-top: 1rem;
   position: relative;
-  left: 100px; /* ✅ Start here — increase as needed (e.g. 20px, 40px, etc.) */
+  margin-left: -12px; /* Adjust as needed */
 }
 
 
@@ -11445,3 +11445,19 @@ font-style: normal;
   padding-left: 20px;
 }
 
+/* Fix icon size and alignment */
+.contact-icon {
+  width: 40px; /* Adjust as needed */
+  height: 40px; /* Keeps aspect ratio */
+  object-fit: contain; /* Prevents distortion */
+}
+
+/* Ensure text stays centered on mobile */
+@media (max-width: 992px) {
+  .contact-info {
+    text-align: center !important;
+  }
+  .contact-info p {
+    justify-content: center !important;
+  }
+}
