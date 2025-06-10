@@ -11081,6 +11081,7 @@ header.masthead h1, header.masthead .h1 {
 
 /* Skyline image sits at the bottom of the contact section */
 .skyline-divider {
+  background-color: #E5F1FF !important; /* Light blue background */
   margin: 0;           /* Remove top/bottom spacing */
   padding: 0;
   line-height: 0;
@@ -11438,5 +11439,10 @@ font-style: normal;
   padding-bottom: 2px;
 }
 
+.contact-padding {
+  padding-top: 100px; /* Decrease this value */
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
 
-/* bluhh*/
