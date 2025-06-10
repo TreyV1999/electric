@@ -8099,7 +8099,7 @@ textarea.form-control-lg {
 
 .text-muted {
   --bs-text-opacity: 1;
-  color: #6c757d !important;
+  color: #8a939b !important;
 }
 
 .text-black-50 {
@@ -11301,7 +11301,7 @@ header.masthead h1.masthead-title-top {
 #about .text-muted,
 #about .text-warning,
 #about small {
-  color: #083160 !important;
+  color: #000  !important;
 }
 
 #about {
