@@ -11050,7 +11050,8 @@ header.masthead h1, header.masthead .h1 {
   width: 440px;          /* Controls width */
   height: 440px;         /* Ensures square shape */
   object-fit: cover;     /* Crops image to fill square without distortion */
-  border-radius: 8px;    /* Optional: Rounded corners */
+  border-radius: 2rem;    /* Optional: Rounded corners */
+  overflow: hidden;  /* Ensures no overflow */ 
 }
 
 /* --------------------- */
@@ -11238,6 +11239,7 @@ color: black
 .contact-photo {
   width: 180px;
   border-radius: 1rem;
+  overflow: hidden;  
 }
 
 .contact-info {
@@ -11326,6 +11328,12 @@ header.masthead h1.masthead-title-top {
 font-family: "roboto", sans-serif;
 font-weight: 700;
 font-style: normal;
+}
+
+.roboto-light {
+  font-family: "roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
 }
 
 
@@ -11483,4 +11491,30 @@ font-style: normal;
 
 #mainNav .nav-link {
   color: #ffffff !important;
+}
+
+
+input.border-bottom-only::placeholder {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+
+textarea.border-bottom-only::placeholder {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+select option[disabled] {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.check-icon {
+  width: 1.25rem;  /* Try 0.75rem–1rem for tight fit */
+  height: auto;
+  flex-shrink: 0;
 }

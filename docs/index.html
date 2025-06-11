@@ -28,7 +28,7 @@
                 <img src="assets/other/logo.webp" alt="Capiro Electric Corp" class="d-none d-lg-block navbar-logo" style="height: 40px;">
                 
                 <!-- Mobile Logo (Vertical/Compact) -->
-                <img src="assets/other/vertical.webp" alt="Capiro Electric Corp" class="d-block d-lg-none navbar-logo-mobile" style="height: 50px;">
+                <img src="assets/other/logo.webp" alt="Capiro Electric Corp" class="d-block d-lg-none navbar-logo-mobile" style="height: 50px;">
               </a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -59,7 +59,7 @@
                 </div>
                 <div class="col-lg-8 align-self-baseline">
                     <p class="text-white-75 roboto mb-5">Reliable Residential & Commercial Electrical Solutions</p>
-                    <a class="btn btn-primary btn-xl" href="#services">Explore Services</a>
+                    <a class="btn btn-primary btn-xl" href="#contact">Contact Now!</a>
                 </div>
 
                  
@@ -109,10 +109,17 @@
                       <p class="roboto mb-4 about-color">Providing reliable electrical services for homes, businesses, & new construction projects, with quality work you can count on.</p>
               
                       <ul class="list-unstyled roboto mb-4 about-color">
-                        <li>✔️ Licensed & Experienced Electrician</li>
-                        <li>✔️ Quality Work for Home or Business</li>
-                        <li>✔️ Prompt, Dependable Service Everytime</li>
+                        <li class="check-item">
+                          <img src="assets/other/check.svg" alt="Check" class="check-icon"> Licensed & Experienced Electrician
+                        </li>
+                        <li class="check-item">
+                          <img src="assets/other/check.svg" alt="Check" class="check-icon"> Quality Work for Home or Business
+                        </li>
+                        <li class="check-item">
+                          <img src="assets/other/check.svg" alt="Check" class="check-icon"> Prompt, Dependable Service Everytime
+                        </li>
                       </ul>
+                      
               
                       <div class="d-flex align-items-center justify-content-start gap-4 mt-4 flex-wrap">
 
@@ -296,11 +303,11 @@
               <!-- Right Column: 40% -->
               <div class="col-lg-4 ps-lg-5 text-lg-start text-center">
                 <p class="montserrat-bold mb-1">Monday - Friday</p>
-                <p class="roboto-light mb-2">8 am – 5 pm</p>
+                <p class=" mb-2 roboto-light">8 am – 5 pm</p>
                 <p class="montserrat-bold mb-1">Saturday</p>
-                <p class="roboto-light mb-2">9 am – 4 pm</p>
+                <p class=" mb-2 roboto-light">9 am – 4 pm</p>
                 <p class="montserrat-bold mb-1">Sunday</p>
-                <p class="roboto-light mb-0">Emergency Only</p>
+                <p class=" mb-0 roboto-light">Emergency Only</p>
               </div>
         
             </div>
@@ -338,11 +345,12 @@
         <div class="contact-info mt-3">
           <p class="d-flex gap-2 mb-2">
             <img src="assets/other/phone.png" alt="Phone" class="contact-icon"> 
-            <span>(305) 367-1378</span>
+            <span class="roboto-light">(305) 367-1378</span>
+
           </p>
           <p class="d-flex justify-content-center  gap-2 mb-0">
             <img src="assets/other/mail.png" alt="Email" class="contact-icon"> 
-            <span>LinoFa43sc@gmail.com</span>
+            <span class="roboto-light">LinoFa43sc@gmail.com</span>
           </p>
         </div>
       </div>
@@ -368,14 +376,14 @@
 
           <!-- Name -->
           <div class="form-group mb-4">
-            <label for="name" class="form-label">Name</label>
+            <label for="name" class="form-label roboto">Name</label>
             <input type="text" name="name" id="name" class="form-control border-bottom-only" placeholder="Your name" data-sb-validations="required" required>
             <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
           </div>
 
           <!-- Email -->
           <div class="form-group mb-4">
-            <label for="email" class="form-label">Email</label>
+            <label for="email" class="form-label roboto">Email</label>
             <input type="email" name="email" id="email" class="form-control border-bottom-only" placeholder="Your email address" data-sb-validations="required,email" required>
             <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
             <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
@@ -383,14 +391,14 @@
 
           <!-- Phone -->
           <div class="form-group mb-4">
-            <label for="phone" class="form-label">Phone Number</label>
+            <label for="phone" class="form-label roboto">Phone Number</label>
             <input type="tel" name="phone" id="phone" class="form-control border-bottom-only" placeholder="Your phone number" data-sb-validations="required" required>
             <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
           </div>
 
           <!-- Required Service Dropdown with Icon -->
           <div class="form-group mb-4">
-            <label for="service" class="form-label">Required Service</label>
+            <label for="service" class="form-label roboto">Required Service</label>
             <div class="custom-select-wrapper">
               <select name="service" id="service" class="form-control border-bottom-only" required>
                 <option value="" disabled selected>Choose a service</option>
@@ -408,7 +416,7 @@
 
           <!-- Message -->
           <div class="form-group mb-4">
-            <label for="message" class="form-label">Message</label>
+            <label for="message" class="form-label roboto">Message</label>
             <textarea name="message" id="message" class="form-control border-bottom-only" rows="4" placeholder="Your message..." data-sb-validations="required" required></textarea>
             <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
           </div>
@@ -416,7 +424,7 @@
           <!-- Sucess Messages -->
             <div class="d-none" id="submitSuccessMessage">
               <div class="text-center mb-3">
-                <div class="fw-bolder">Form submission successful!</div>
+                <div class="fw-bolder roboto">Form submission successful!</div>
                 We will contact you shortly.
               </div>
             </div>
@@ -427,7 +435,7 @@
     </div>
 
     <!-- Submit Button -->
-    <button class="btn btn-orange px-4 py-2" id="submitButton" type="submit">Submit</button>
+    <button class="btn btn-orange px-4 py-2 montserrat-semibold" id="submitButton" type="submit">Submit</button>
   </form>
 </div>
 
