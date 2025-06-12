@@ -1,525 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Trusted Electrical Services </title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Bootstrap Icons-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-        <!-- Google fonts-->
-        <link rel="stylesheet" href="https://use.typekit.net/bpn1hty.css">
-        <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
-        <!-- SimpleLightbox plugin CSS-->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="./css/styles.css" rel="stylesheet" />
-    </head>
-    <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
-            <div class="container px-4 px-lg-5">
-              <a class="navbar-brand" href="#page-top">
-                <!-- Desktop Logo (Horizontal) -->
-                <img src="assets/other/logo.webp" alt="Capiro Electric Corp" class="d-none d-lg-block navbar-logo" style="height: 40px;">
-                
-                <!-- Mobile Logo (Vertical/Compact) -->
-                <img src="assets/other/vertical.webp" alt="Capiro Electric Corp" class="d-block d-lg-none navbar-logo-mobile" style="height: 50px;">
-              </a>
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ms-auto my-2 my-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#portfolio">Projects</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+<head>
+  <meta charset="UTF-8" />
+  <title>Choose Your Language</title>
+  <style>
+    /* full-screen white overlay */
+    #lang-popup {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(255,255,255,0.95);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      font-family: sans-serif;
+    }
+    #lang-box {
+      text-align: center;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      background: white;
+    }
+    #lang-box button {
+      margin: 0.5rem;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
 
-
-<!-- Combined Masthead Wrapper -->
-<div class="masthead-wrapper">
-    <div class="highlight-anchor">
-    <!-- Masthead-->
-    <header class="masthead">
-        <div class="container masthead-shift px-4 px-lg-5 h-100">
-            <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
-              <div class="col-lg-8 align-self-end masthead-title-wrapper">
-                <h1 class="masthead-title-top roboto">Capiro Electric Corp</h1>
-            </div>
-                <div class="col-lg-8 align-self-end">
-                    <h1 class="text-white montserrat-bold">Trusted Electrical Services</h1>
-                    <hr class="divider" />
-                </div>
-                <div class="col-lg-8 align-self-baseline">
-                    <p class="text-white-75 roboto mb-5">Reliable Residential & Commercial Electrical Solutions</p>
-                    <a class="btn btn-primary btn-xl" href="#services">Explore Services</a>
-                </div>
-
-                 
-            </div>
-
-        </div>
-    </header>
-  
-          
-    </div>
-
-            <!-- About Section -->
-            <section class="page-section" id="about">
-                <div class="container px-4 px-lg-5">
-                  <!-- Highlight Bar Below Masthead with Dividers -->
-                  <section class="highlight-bar">
-                    <div class="container text-center">
-                      <div class="row justify-content-center">
-                        
-                        <div class="col-md-4 mb-4 text-center">
-                          <img src="assets/electric/free.png" alt="Free Estimates" class="highlight-img">
-                        </div>
-                  
-                        <div class="col-md-4 mb-4 text-center">
-                          <img src="assets/electric/local.png" alt="Locally Trusted" class="highlight-img">
-                        </div>
-                  
-                        <div class="col-md-4 mb-4 text-center">
-                          <img src="assets/electric/tech.png" alt="Licensed Technician" class="highlight-img">
-                        </div>
-                  
-                      </div>
-                    </div>
-                  </section>
-                  
-                  <div class="row align-items-center gx-5">
-              
-                    <!-- Left: Image(s) -->
-                    <div class="col-lg-6 mb-4 mb-lg-0 text-center">
-                        <img src="assets/electric/about.png" class="about-img img-fluid rounded" alt="About image">
-                    </div>
-              
-                    <!-- Right: Text content -->
-                    <div class="col-lg-6">
-                      <p class="text-warning montserrat-bold">About Us</p>
-                      <h2 class="montserrat-bold about-color">Professional Residential<br>& Commercial Services</h2>
-                      <p class="roboto mb-4 about-color">Providing reliable electrical services for homes, businesses, & new construction projects, with quality work you can count on.</p>
-              
-                      <ul class="list-unstyled roboto mb-4 about-color">
-                        <li>✔️ Licensed & Experienced Electrician</li>
-                        <li>✔️ Quality Work for Home or Business</li>
-                        <li>✔️ Prompt, Dependable Service Everytime</li>
-                      </ul>
-              
-                      <div class="d-flex align-items-center justify-content-start gap-4 mt-4 flex-wrap">
-
-                        <!-- Owner Image & Name -->
-                        <div class="d-flex align-items-center">
-                          <img src="assets/electric/headshot.png" alt="Owner" class="rounded-circle me-3" width="50" height="50">
-                          <div>
-                            <p class="mb-0 montserrat-bold about-color">Lino Fleites</p>
-                            <small class="montserrat-light about-color">Owner</small>
-                          </div>
-                        </div>
-
-                            <!-- Divider Line -->
-                            <div class="signature-divider"></div>
-                        
-                        <!-- Signature (Text with Adobe Font) -->
-                        <div class="signature">
-                          Lino Fleites
-                        </div>
-                      
-                      </div>
-                      
-              
-                  </div>
-                </div>
-              </section>
-              
-        
-</div>
-</div>
-        
-
-        <!-- Portfolio-->
-        <div id="portfolio">
-            <div class="container-fluid p-0">
-                <div class="row g-0">
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/other/photo1.jpg" title="Low Voltage Wiring Installation">
-                            <img class="img-fluid" src="assets/other/photo1.jpg" alt="..." />
-                            <div class="portfolio-box-caption">
-                              <div class="roboto-bold">Low Voltage Wiring Installation</div>
-                                <div class="text-muted roboto ">Neat, efficient wiring for all your tech needs</div>
-                                
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/other/photo2.jpg" title="Mini Split, Condensing Unit">
-                            <img class="img-fluid" src="assets/other/photo2.jpg" alt="..." />
-                            <div class="portfolio-box-caption">
-                              <div class="roboto-bold">Mini Split, Condensing Unit</div>
-                                <div class="text-muted roboto ">Smooth, expert installations, featuring high-performance
-                                  condensing & heater units for year-round comfort</div>
-                                
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/other/photo3.jpg" title="Paver Brick Installation">
-                            <img class="img-fluid" src="assets/other/photo3.jpg" alt="..." />
-                            <div class="portfolio-box-caption">
-                              <div class="roboto-bold">Paver Brick Installation</div>
-                                <div class="text-muted roboto ">Durable paver brick solutions for patios, walkways, and driveways. Expertly installed for lasting beauty & function</div>
-                                
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/other/photo4.jpg" title="Tankless Water Heater Installation">
-                            <img class="img-fluid" src="assets/other/photo4.jpg" alt="..." />
-                            <div class="portfolio-box-caption">
-                              <div class="roboto-bold">Tankless Water Heater Installation</div>
-                                <div class="text-muted roboto ">Endless hot water and energy savings with expert tankless water heater installation</div>
-                                
-                            </div>
-                        </a>
-                    </div>
-
-
-                    <div class="col-lg-4 col-sm-6">
-                      <a class="portfolio-box" href="assets/other/photo5.jpg" title="Main Panel & Wiring Order Installation">
-                          <img class="img-fluid" src="assets/other/photo5.jpg" alt="..." />
-                          <div class="portfolio-box-caption p-3">
-                            <div class="roboto-bold">Main Panel & Wiring Order Installation</div>
-                              <div class="text-muted roboto ">Complete electrical setups including main panel upgrades, clean wiring, and outlet installations</div>
-                              
-                          </div>
-                      </a>
-                  </div>
-
-
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/other/photo 6 bottom  R .jpg" title="Electric Services">
-                            <img class="img-fluid" src="assets/other/photo 6 bottom  R .jpg" alt="..." />
-                            <div class="portfolio-box-caption">
-                              <div class="roboto-bold">Electric Services</div>
-                                <div class="text-muted roboto ">From installations to repairs, we power your projects with safety and precision.</div>
-                                
-                            </div>
-                        </a>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-
-
-        <!-- Services-->
-        <section class="page-section" id="services">
-          <div class="container text-center">
-            <h2 class="text-center montserrat-bold service-heading">Services We Offer</h2>
-              <div class="row gx-4 gx-lg-5 justify-content-center">
-
-                <div class="col-6 col-lg-4 mb-4">
-                  <div class="service-card">
-                    <img src="assets/electric/tools.png" alt="AC" class="service-icon mb-3">
-                    <h3 class="h5 montserrat-bold mb-2">Electrical Services</h3>
-                    <p class="text-muted roboto mb-0">Complete electrical solutions for homes and businesses, from wiring to troubleshooting and upgrades.</p>
-                  </div>
-                </div>
-
-                <div class="col-6 col-lg-4 mb-4">
-                  <div class="service-card">
-                    <img src="assets/electric/plumbing.png" alt="AC" class="service-icon mb-3">
-                    <h3 class="h5 montserrat-bold mb-2">Plumbing</h3>
-                    <p class="text-muted roboto mb-0">Professional plumbing for kitchens, bathrooms, and beyond. Quality service you can trust.</p>
-                  </div>
-                </div>
-
-
-                <div class="col-6 col-lg-4 mb-4">
-                  <div class="service-card">
-                    <img src="assets/electric/safety.png" alt="AC" class="service-icon mb-3">
-                    <h3 class="h5 montserrat-bold mb-2">Safety Systems</h3>
-                    <p class="text-muted roboto mb-0">Professional installation of fire alarm systems to protect your property and meet code requirements.</p>
-                  </div>
-                </div>
-
-                <div class="col-6 col-lg-4 mb-4">
-                  <div class="service-card">
-                    <img src="assets/electric/ac.png" alt="AC" class="service-icon mb-3">
-                    <h3 class="h5 montserrat-bold mb-2">Mini Split A/C</h3>
-                    <p class="text-muted roboto mb-0">Efficient ductless cooling systems installed for year-round comfort and energy savings.</p>
-                  </div>
-                </div>
-
-                <div class="col-6 col-lg-4 mb-4">
-                  <div class="service-card">
-                    <img src="assets/electric/camera.png" alt="AC" class="service-icon mb-3">
-                    <h3 class="h5 montserrat-bold mb-2">Security Systems</h3>
-                    <p class="text-muted roboto mb-0">Set up your space with cameras, motion sensors, and smart tech for added peace of mind.</p>
-                  </div>
-                </div>
-
-                <div class="col-6 col-lg-4 mb-4">
-                  <div class="service-card">
-                    <img src="assets/electric/construction.png" alt="AC" class="service-icon mb-3">
-                    <h3 class="h5 montserrat-bold mb-2">Construction</h3>
-                    <p class="text-muted roboto mb-0">Device Mounting, small-scale construction, patchwork, and painting to support electrical installs and clean finishes.</p>
-                  </div>
-                </div>
-              </div>
-          </div>
-      </section>
-
-
-        <!-- Call to action-->
-        <section class="cta-section text-white">
-          <div class="container">
-            <div class="row align-items-center justify-content-between">
-              
-              <!-- Left Column: 60% -->
-              <div class="col-lg-8 pe-lg-5 mb-4 mb-lg-0">
-                <h2 class="fw-bold montserrat-bold mb-3 cta-heading">Call Today For A Service</h2>
-                <div class="d-flex flex-wrap align-items-center gap-4">
-                  <p class="mb-0 montserrat-medium cta-subheading">Let's get your job done right.</p>
-                  <a class="btn btn-warning text-dark montserrat-semibold fw-bold px-5 py-3 rounded-pill" href="tel:+18133266919">CALL NOW</a>
-                </div>
-              </div>
-        
-              <!-- Right Column: 40% -->
-              <div class="col-lg-4 ps-lg-5 text-lg-start text-center">
-                <p class="montserrat-bold mb-1">Monday - Friday</p>
-                <p class="roboto-light mb-2">8 am – 5 pm</p>
-                <p class="montserrat-bold mb-1">Saturday</p>
-                <p class="roboto-light mb-2">9 am – 4 pm</p>
-                <p class="montserrat-bold mb-1">Sunday</p>
-                <p class="roboto-light mb-0">Emergency Only</p>
-              </div>
-        
-            </div>
-          </div>
-        </section>
-        
-        
-
-      
-    <!-- Contact Section - True 2-Column Layout with Placeholders -->
-<section class="page-section" id="contact">
-  <div class="container px-4 px-lg-5">
-    <div class="contact-box p-5 contact-padding">
-    <!-- Section Header -->
-    <div class="row justify-content-center text-center mb-5">
-      <div class="col-lg-8">
-        <h2 class="montserrat-bold">Let’s Get In Touch!</h2>
-        <hr class="divider" />
-        <p class="text-muted roboto">Have a project in mind? Send a message and we will get back as soon as possible!</p>
-      </div>
-    </div>
-
-    <!-- Two Columns: Image Left, Form Right -->
-    <div class="row align-items-center">
-
-
-      <!-- Left: Photo + Contact Info -->
-      <div class="col-lg-6 text-center mb-4 mb-lg-0">
-        <!-- Photo Frame (centered) -->
-        <div class="contact-photo-frame mx-auto">
-          <img src="assets/other/newcontact.jpg" alt="Plumber Contact" class="contact-photo img-fluid rounded">
-        </div>
-
-        <!-- Contact Info (centered, with fixed icons) -->
-        <div class="contact-info mt-3">
-          <p class="d-flex gap-2 mb-2">
-            <img src="assets/other/phone.png" alt="Phone" class="contact-icon"> 
-            <span>(305) 367-1378</span>
-          </p>
-          <p class="d-flex justify-content-center  gap-2 mb-0">
-            <img src="assets/other/mail.png" alt="Email" class="contact-icon"> 
-            <span>LinoFa43sc@gmail.com</span>
-          </p>
-        </div>
-      </div>
-
-
-
-
-
-
-
-
-
-
-     <!-- Right: Updated Contact Form -->
-    <div class="col-lg-6">
-    <form id="contactForm" class="row g-3" action="https://formsubmit.co/treyvelez19@gmail.com" method="POST">
-
-           <!-- Formsubmit.co Parameters -->
-          <input type="hidden" name="_captcha" value="false">
-          <input type="hidden" name="_template" value="table">
-          <input type="hidden" name="_next" value="#">
-
-
-          <!-- Name -->
-          <div class="form-group mb-4">
-            <label for="name" class="form-label">Name</label>
-            <input type="text" name="name" id="name" class="form-control border-bottom-only" placeholder="Your name" data-sb-validations="required" required>
-            <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
-          </div>
-
-          <!-- Email -->
-          <div class="form-group mb-4">
-            <label for="email" class="form-label">Email</label>
-            <input type="email" name="email" id="email" class="form-control border-bottom-only" placeholder="Your email address" data-sb-validations="required,email" required>
-            <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-            <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
-          </div>
-
-          <!-- Phone -->
-          <div class="form-group mb-4">
-            <label for="phone" class="form-label">Phone Number</label>
-            <input type="tel" name="phone" id="phone" class="form-control border-bottom-only" placeholder="Your phone number" data-sb-validations="required" required>
-            <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
-          </div>
-
-          <!-- Required Service Dropdown with Icon -->
-          <div class="form-group mb-4">
-            <label for="service" class="form-label">Required Service</label>
-            <div class="custom-select-wrapper">
-              <select name="service" id="service" class="form-control border-bottom-only" required>
-                <option value="" disabled selected>Choose a service</option>
-                <option value="Electric">Electrical Services</option>
-                <option value="Plumbing">Plumbing</option>
-                <option value="Mini ac">Mini Split A/C</option>
-                <option value="Security">Security System</option>
-                <option value="Safety">Safety Systems</option>
-                <option value="Construction">Construction</option>
-                <option value="Other">Other</option>
-              </select>
-              <i class="bi bi-caret-down-fill dropdown-icon"></i>
-            </div>
-          </div>
-
-          <!-- Message -->
-          <div class="form-group mb-4">
-            <label for="message" class="form-label">Message</label>
-            <textarea name="message" id="message" class="form-control border-bottom-only" rows="4" placeholder="Your message..." data-sb-validations="required" required></textarea>
-            <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
-          </div>
-
-          <!-- Sucess Messages -->
-            <div class="d-none" id="submitSuccessMessage">
-              <div class="text-center mb-3">
-                <div class="fw-bolder">Form submission successful!</div>
-                We will contact you shortly.
-              </div>
-            </div>
-
-    <!-- Error Message -->
-    <div class="d-none" id="submitErrorMessage">
-      <div class="text-center text-danger mb-3">Error sending message!</div>
-    </div>
-
-    <!-- Submit Button -->
-    <button class="btn btn-orange px-4 py-2" id="submitButton" type="submit">Submit</button>
-  </form>
-</div>
-
+  <!-- just the selector, nothing else -->
+  <div id="lang-popup">
+    <div id="lang-box">
+      <h2>Choose your language</h2>
+      <button id="choose-en">English</button>
+      <button id="choose-es">Español</button>
     </div>
   </div>
-</div>
 
-  <!-- Decorative skyline divider -->
-   
-<!-- Decorative skyline divider -->
-<div style="background-color: #E5F1FF; padding: 0; margin: 0;">
-  <img src="assets/other/skyline.png" alt="Skyline divider" class="img-fluid" style="width: 100%; display: block; background-color: #E5F1FF;">
-</div>
+  <script>
+    const go = (lang) => {
+      localStorage.setItem('siteLang', lang);
+      // jump into the chosen folder’s index.html
+      window.location.href = `./${lang}/index.html`;
+    };
 
+    document.getElementById('choose-en')
+            .addEventListener('click', () => go('en'));
+    document.getElementById('choose-es')
+            .addEventListener('click', () => go('es'));
+  </script>
 
-</section>
-
-  
-  
-        <!-- Footer -->
-      <footer class="py-5" style="background-color: #083160;">
-        <div class="container px-4 px-lg-5">
-            <div class="text-center">
-                <img src="assets/other/logo.webp" alt="Capiro Electric Corp Logo" style="height: 60px;"> <!-- Adjust height as needed -->
-            </div>
-        </div>
-      </footer>
-
-
-
-
-
-
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- SimpleLightbox plugin JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-
-        <!-- Custom JS for form validation and success/error messages -->
-        <script>
-          document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            const submitButton = document.getElementById('submitButton');
-            const successMessage = document.getElementById('submitSuccessMessage');
-            const errorMessage = document.getElementById('submitErrorMessage');
-            
-            // Show loading state
-            submitButton.disabled = true;
-            submitButton.textContent = 'Sending...';
-            
-            // Get form data
-            const formData = new FormData(this);
-            
-            // Send to Formsubmit.co
-            fetch(this.action, {
-              method: 'POST',
-              body: formData,
-              headers: {
-                'Accept': 'application/json'
-              }
-            })
-            .then(response => {
-              if (response.ok) {
-                // Show success message
-                successMessage.classList.remove('d-none');
-                errorMessage.classList.add('d-none');
-                this.reset(); // Clear form
-              } else {
-                throw new Error('Form submission failed');
-              }
-            })
-            .catch(error => {
-              // Show error message
-              errorMessage.classList.remove('d-none');
-              successMessage.classList.add('d-none');
-            })
-            .finally(() => {
-              submitButton.disabled = false;
-              submitButton.textContent = 'Submit';
-            });
-          });
-        </script>
-    </body>
+</body>
 </html>
-
-
-
